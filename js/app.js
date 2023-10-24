@@ -38,14 +38,14 @@ $(document).ready(function () {
       const hours = Math.floor(timeDiff / (1000 * 60 * 60));
       const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
       const seconds = Math.floor((timeDiff / 1000) % 60);
-      return `<p>距离下班还有</p><p style="font-size:40px"> ${hours} 小时 ${minutes} 分钟 ${seconds} 秒</p>`;
+      return `<p>距离下班还有</p><p style="font-size:32px"> ${hours} 小时 ${minutes} 分钟 ${seconds} 秒</p>`;
     } else {
       // 如果当前时间还未到17点
       const timeDiff = targetTime17 - now;
       const hours = Math.floor(timeDiff / (1000 * 60 * 60));
       const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
       const seconds = Math.floor((timeDiff / 1000) % 60);
-      return `<p>距离17点还有</p><p style="font-size:40px"> ${hours} 小时 ${minutes} 分钟 ${seconds} 秒</p>`;
+      return `<p>距离17点还有</p><p style="font-size:32px"> ${hours} 小时 ${minutes} 分钟 ${seconds} 秒</p>`;
     }
   }
   setInterval(function () {
